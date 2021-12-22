@@ -31,7 +31,7 @@ function App() {
     cardOne ? setCardTwo(card) : setCardOne(card);
   };
 
-  console.log(cardOne, cardTwo);
+  
 
   useEffect(() => newGameHandler(), []);
 
