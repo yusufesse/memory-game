@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5234ae;
+  border: 4px solid #f08c00;
+  border-radius: 1.4rem;
+  padding: 1.4rem;
+}
+
+.card-cover,
+.card-front {
+  width: 65%;
+}
+.card-cover {
+  padding-bottom: 223.35px;
+}
+.card .card-front {
+  position: absolute;
+  transform: rotateY(90deg);
+  transition: all 0.2s ease-in;
+}
+
+.flip-card .card-front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .card-cover {
+  transition: all 0.2s ease-in;
+}
+.flip-card .card-cover {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
